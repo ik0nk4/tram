@@ -1,0 +1,13 @@
+{
+  "name": "tram",
+  "library": "lib",
+  "source": "src",
+
+  "squish": {
+    "pathFiles": "./src",
+    "mainFile": "main.lua",
+    "outputFolder": "build",
+    "outputFile": "release.lua",
+    "ignoreDirs": ["core/test"]
+  }
+}

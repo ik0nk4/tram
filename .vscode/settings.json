@@ -1,0 +1,5 @@
+{
+  "Lua.workspace.ignoreDir": [".vscode", ".squish", "build", "dist", "lib"],
+  "Lua.workspace.library": ["${addons}/moonloader/module/library"],
+  "Lua.diagnostics.globals": ["main"]
+}
