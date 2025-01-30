@@ -1,9 +1,9 @@
 local core = {}
 
-local const = require('core.const')
+local botLogic = require('core.botLogic')
 
-function core.start()
-  const.start()
+function core.initialize()
+    lua_thread.create(botLogic.update)
 end
 
 return core

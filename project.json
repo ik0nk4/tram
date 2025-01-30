@@ -5,7 +5,7 @@
 
   "squish": {
     "pathFiles": "./src",
-    "mainFile": "main.lua",
+    "mainFile": "init.lua",
     "outputFolder": "build",
     "outputFile": "release.lua",
     "ignoreDirs": ["core/test"]
