@@ -1,6 +1,7 @@
 local botLogic = {}
 
-local searchMarker = require("Utils.searchMarker")
+local marker = require('utils.markers')
+local logger = require('utils.logger')
 
 local DECELERATION = 14.5       -- (км/ч)/с
 local MAX_SPEED = 85.0          -- км/ч, лимит скорости
@@ -37,7 +38,7 @@ local prevDist = 999999
 function botLogic.handleTrainMovement()
     -- 1) Определяем, есть ли маркер и мы в трамвае
     local vehicle = storeCarCharIsInNoSave(PLAYER_PED)
-    local foundMarker, mX, mY, mZ = searchMarker.find()
+    local foundMarker, mX, mY, mZ = marker.find()
     if not vehicle or not isCharInAnyTrain(PLAYER_PED) or not foundMarker then
         -- Нет трамвая или нет маркера -> STATE_IDLE
         botState = STATE_IDLE
@@ -113,7 +114,7 @@ function botLogic.handleTrainMovement()
         pressBrake()
 
         if dist < 4.0 and speedKmh < 5.0 then
-            setTrainSpeed(vehicle, 0)
+            -- setTrainSpeed(vehicle, 0)
             -- wait(100)
             if (now - lastStateSwitchTime) >= MIN_SWITCH_INTERVAL then
                 botState = STATE_STOPPED

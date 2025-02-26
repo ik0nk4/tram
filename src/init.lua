@@ -5,8 +5,6 @@ local UI = require("UI")
 local Utils = require("Utils")
 local core = require("core")
 
-local font = renderCreateFont('Verdana', 10, 0, 0)
-
 function main()
     while not isSampAvailable() do wait(0) end
 

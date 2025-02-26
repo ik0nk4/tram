@@ -1,9 +1,9 @@
-local UI = {}
+local ui = {}
 
-UI.main_window = require "UI.main_window"
+ui.main_window = require "ui.main_window"
 
-function UI.initialize()
-    UI.main_window.initialize()
+function ui.initialize()
+    ui.main_window.initialize()
 end
 
-return UI
+return ui

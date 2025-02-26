@@ -1,15 +1,18 @@
 {
-  "Lua.runtime.version": "LuaJIT",
-  "Lua.runtime.path": ["${workspaceFolder}/src"],
-  "Lua.workspace.checkThirdParty": false,
-  "Lua.format.enable": true,
-  "Lua.diagnostics.enable": true,
-  "Lua.format.defaultConfig": {
-    "indent_style": "space",
-    "indent_size": "4"
-  },
-  "Lua.hint.enable": true,
-  "Lua.workspace.ignoreDir": [".vscode", ".squish", "build", "dist", "lib"],
-  "Lua.workspace.library": ["${addons}/moonloader/module/library"],
-  "Lua.diagnostics.globals": ["main", "wait", "isSampAvailable", "renderCreateFont"]
-}
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.runtime.path": ["${workspaceFolder}/src"],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.format.enable": true,
+    "Lua.diagnostics.enable": true,
+    "Lua.format.defaultConfig": {
+      "indent_style": "space",
+      "indent_size": "4"
+    },
+    "Lua.hint.enable": true,
+    "Lua.workspace.ignoreDir": [".vscode", ".squish", "build", "dist", "lib"],
+    "Lua.workspace.library": [
+        "${addons}/moonloader/module/library"
+    ],
+    "Lua.diagnostics.globals": ["main", "wait", "isSampAvailable", "renderCreateFont"]
+  }
+  
